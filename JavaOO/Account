@@ -32,5 +32,23 @@ public class Account {
 		this.owner = owner;
 		this.balance = balance;
 	}
+	
+		public long deposit(long amount){
+		return balance = balance + amount;
+	}
+	
+	public long withdraw(long amount){
+		return balance = balance - amount;
+	}
+	
+	public static void main(String[] args){
+		Account a1 = new Account("김김김",5000);
+		a1.deposit(10000);
+		a1.deposit(10000);
+		a1.withdraw(4000);
+		a1.withdraw(8000);
+		System.out.println(a1.getBalance());
+		
+	}
 
 }
